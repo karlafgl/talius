@@ -1,6 +1,12 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding: 0;
+    /* padding: 100px; */
 }
 
 .banner {
@@ -72,20 +78,6 @@ body {
     }
 }
 
-.titles {
-    color: #a75f49;
-    font-family: 'Dancing Script';
-}
-
-.bg-pink {
-    background: #a75f49
-}
-
-.fixed-top.scrolled {
-    background-color: rgb(15, 14, 14) !important;
-    transition: background-color 200ms linear;
-}
-
 .text-white-opacity {
     color: #f2f2f2;
 }
@@ -107,11 +99,14 @@ body {
     background-image: url(../img/casaVerde1.jpeg);
 }
 
-.navShadow {
-    color: #fff;
-    text-shadow: 2px 4px 6px #000000;
-}
 
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+/*  */
+
+
+/* .fixed-top.scrolled {
+    background-color: #fff !important;
+} */
+
+.boldLetters {
+    color: #bd9b04;
 }
