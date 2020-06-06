@@ -64,7 +64,7 @@
                       Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Products</a>
+                        <a data-scroll class="dropdown-item page-scroll" href="#products">Products</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Rollshutters</a>
                         <div class="dropdown-divider"></div>
@@ -98,48 +98,175 @@
     </nav>
 
     <!-- video banner -->
-    <div class="banner" id="home">
-        <video muted autoplay loop>
+    <header id="home">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="video/taliusvideo.mp4" type="video/mp4">
         </video>
-        <div class="content">
-            <h1>Lorem </h1>
+        <div class="container">
+            <div class="d-flex text-left align-items-left margin-top-h1 ml-0">
+                <div class="w-25 text-white-opacity ">
+                    <!-- <h1 class="h4 text-muted ">Web Designer<br/>Marketing<br/><span class="blockquote-footer">Karla Gonzalez</span></h1> -->
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
     <div class="text-center mt-2 shadow-lg p-3 mb-5 bg-light rounded" id="about">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="h3 font-weight-bold">THE ULTIMATE SOLUTION FOR <span class="boldLetters">SECURITY, SHADE AND STORM</span> PROTECTION SINCE 1980 </h2>
+                <button type="button" class="btn btn-outline-warning btn-lg mt-3 mr-3">Register your Warranty </button>
+                <button type="button" class="btn btn-outline-warning btn-lg mt-3">Contact us</button>
             </div>
         </div>
     </div>
 
+    <!-- PRODUCTS -->
+    <div class="container-fluid text-justify shadow-lg p-3 pb-5 mb-5 bg-white rounded" id="products">
+        <div class="row">
+            <div class="col-12 mx-auto text-center">
+                <div class="mt-4">
+                    <h4 class="display-4 font-weight-bold">PRODUCTS</h4>
+                    <hr>
+                    <p>Talius is a service oriented company with a can-do culture. We manufacture a full range of products with endless solutions. Learn more about Talius Products.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <div class="card h-100 img-fluid">
+                    <h5 class="card-header text-center textPink">Rollshutters</h5>
+                    <img class="card-img-top about-content-bottom" src="img/talius-beach-cottage.jpg.webp" alt="webDesign image" height="260">
+                    <div class="card-body">
+                        <p class="card-text">Talius rollshutters are the ultimate solution when you want to protect your windows and, more importantly, what is behind them. Our rollshutters are strong and durable and will protect you and your home.</p>
+                        <a href="#" class="btn btn-outline-warning">Read More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <div class="card h-100 img-fluid">
+                    <h5 class="card-header text-center textPink">Habitat Screens™</h5>
+                    <img class="card-img-top about-content-bottom2" src="img/habitat-screens-banana.jpg" alt="responsiveDesign image" height="260">
+                    <div class="card-body">
+                        <p class="card-text">Talius Habitat Screens™ are easy to see through and completely retractable. Perfect for homes, patios, gazebos, and more.</p>
+                        <a href="#" class="btn btn-outline-warning">Read More...</a>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
 
+    <!-- Footer2 -->
+    <footer class="page-footer font-small blue-grey lighten-5">
+
+        <div style="background-color: #bd9b04;">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social networks!</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4 fa-2x fa-lg"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4 fa-2x fa-lg"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4 fa-2x fa-lg"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4 fa-2x fa-lg"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text fa-2x fa-lg"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3 dark-grey-text">
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">TALIUS HEAD OFFICE</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> #5501 46 Ave SE, Salmon Arm, British Columbia V1E 4S1, Canada</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@talius.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +1.800.665.5550</p>
+                    <p>
+                        <i class="fas fa-globe-americas mr-3"></i> https://www.talius.com</p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold">TALIUS VANCOUVER</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> 200 Golden Drive #4, Coquitlam, British Columbia V3K 6M8 Canada</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>taliusvancouver@talius.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +1.604.468.7655</p>
+                    <p>
+                        <i class="fas fa-globe-americas mr-3"></i> https://www.talius.com</p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">TALIUS GRENADA</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Building 10 Unit 2A, Frequente Industrial Estate St, Georges, Grenada</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@taliusgrenada.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>+1.473.409.6803</p>
+                    <p>
+                        <i class="fas fa-globe-americas mr-3"></i> http://www.taliuscaribbean.com</p>
+
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">TALIUS MEXICO</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> S. de R.L. de C.V. Local No 3, Plaza Santa Carmela Cabo San Lucas B.C.S. Mexico, C.P. 23545</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@taliusmexico.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 </p>
+                    <p>
+                        <i class="fas fa-globe-americas mr-3"></i> http://www.taliusmexico.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
 
 
     <!-- Footer -->
     <footer class="page-footer text-white bg-dark pt-4">
-        <div class="container">
-            <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                    <a class="mx-1 text-white" href="https://www.instagram.com/valledelsolcabo/" target="_blank">
-                        <i class="fab fa-instagram fa-2x fa-lg"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="mx-1 text-white" href="https://www.facebook.com/ValledelsolLosCabos" target="_blank">
-                        <i class="fab fa-facebook-f fa-2x fa-lg"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
         <div class="text-center">
-            <p><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> +52 (624) 161 80 42</p>
+            <p><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> +52 (624) </p>
         </div>
         <div class="footer-copyright text-center py-3">Copyright ©
-            <a href="#" class="text-white"> Valle del Sol -  <span id="copyright-year">2020</span></a>
+            <a href="#" class="text-white"> Talius -  <span id="copyright-year">2020 </span> All Rights Reserved.</a>
+            <br>
+            <a href="https://asercamx.com/" target="_blank" class="text-white"> Search Engine Marketing and Website Inspired with by Asercamx</a>
         </div>
     </footer>
 
