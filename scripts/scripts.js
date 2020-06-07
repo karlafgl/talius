@@ -64,3 +64,13 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
+
+//navbar
+$(document).ready(function() {
+
+    $('.first-button').on('click', function() {
+
+        $('.animated-icon1').toggleClass('open');
+    });
+
+});
