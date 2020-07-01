@@ -30,40 +30,16 @@ $(function() {
 //Reveal Effect
 window.sr = ScrollReveal();
 
-sr.reveal('.about-content-left', {
-    duration: 2000,
-    origin: 'left',
-    distance: '300px'
-});
-
-sr.reveal('.about-content-bottom', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '300px'
-});
-
-sr.reveal('.about-content-bottom2', {
+sr.reveal('.choppy', {
+    easing: 'steps(5)',
     duration: 3000,
-    origin: 'bottom',
-    distance: '300px'
 });
 
-sr.reveal('.about-content-bottom3', {
-    duration: 4000,
-    origin: 'bottom',
-    distance: '300px'
+sr.reveal('.scaleUp', {
+    scale: .85,
+    duration: 3000,
 });
 
-sr.reveal('.about-content-bottom4', {
-    duration: 5000,
-    origin: 'bottom',
-    distance: '300px'
-});
-
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
 
 //navbar
 $(document).ready(function() {
