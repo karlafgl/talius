@@ -430,3 +430,16 @@ a.ext-link>div {
 .mainColor {
     color: #bd9b04;
 }
+
+
+/* CAROUSEL */
+
+.carousel-item img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+#carousel-example-1z {
+    background-color: #000000;
+}
