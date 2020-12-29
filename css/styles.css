@@ -443,3 +443,10 @@ a.ext-link>div {
 #carousel-example-1z {
     background-color: #000000;
 }
+
+
+/* Translation */
+
+.skiptranslate {
+    padding: 10px;
+}
