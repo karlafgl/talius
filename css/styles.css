@@ -1,33 +1,446 @@
-html {
-    font-family: sans-serif;
-    background-color: gray;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+A:link {
+  text-decoration: none;
+  color: black;
+}
+
+A:hover {
+  color: #bd9b04;
+  font-family: arial;
+  text-decoration: none
+}
+
+A:visited {
+  color: black;
+  font-family: arial;
+  text-decoration: none
+}
+
+* {
+  outline: none !important;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+textarea:focus,
+input:focus {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+#my-video {
+  position: relative;
+  background-color: black;
+  height: 60vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  /* position: relative; */
+  /* background-color: black; */
+  /* height: 75vh; */
+  /* min-height: 25rem; */
+  /* width: 100%; */
+  /* overflow: hidden; */
+}
+
+header video {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* min-width: 100%; */
+  /* min-height: 100%; */
+  /* width: auto; */
+  /* height: auto; */
+  /* z-index: 0; */
+  /* -ms-transform: translateX(-50%) translateY(-50%); */
+  /* -moz-transform: translateX(-50%) translateY(-50%); */
+  /* -webkit-transform: translateX(-50%) translateY(-50%); */
+  /* transform: translateX(-50%) translateY(-50%); */
+}
+
+
+/* header .container {
+  position: relative;
+  z-index: 2;
+} */
+
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+} 
+
+
+
+/* Smartphones (portrait)  */
+
+@media only screen and (max-width: 320px) {
+  .btn-outline-warning {
+      display: block;
+      width: 100%;
   }
+}
 
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
+@media only screen and (max-width: 360px) {
+  .banner .content h1 {
+      font-size: 0.85rem;
   }
-
-  header {
-    background: url(header.jpg) no-repeat center;
-    height: 200px;
+  .banner .content p {
+      font-size: 1em;
   }
-
-  section {
-    padding: 20px;
+  .banner .content {
+      max-width: 280px;
   }
+}
 
-  p {
-    line-height: 1.5;
-  }
+.text-white-opacity {
+  color: #f2f2f2;
+}
 
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-  }
+.margin-top-h1 {
+  margin-top: 22rem;
+}
+
+.parallax {
+  background: #fff fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.boldLetters {
+  color: #bd9b04;
+}
+
+.btn-outline-warning {
+  color: #bd9b04;
+  border-color: #bd9b04;
+}
+
+.btn-outline-warning:hover {
+  background-color: #bd9b04;
+}
+
+.col-12 {
+  padding: 0px;
+}
+
+.divColor {
+  background-color: #f6f5f5;
+}
+
+hr {
+  background-color: #bd9b04;
+  width: 8em;
+  height: 4px;
+  margin-top: 0;
+}
+
+
+a.ext-link {
+  position: relative;
+  height: 100%;
+  text-decoration: none;
+  color: #f8f9fa;
+  cursor: pointer;
+}
+
+a.ext-link>div {
+  position: relative;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: 1;
+  opacity: 1;
+  position: relative;
+}
+
+.subtitle {
+  color: #ced4da;
+  font-size: .9rem;
+  letter-spacing: .035rem;
+  line-height: 1.125;
+  margin: -.25rem 0 0;
+  opacity: 0;
+}
+
+.wrapper .row {
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper .row>div {
+  height: 240px;
+  overflow: hidden;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.wrapper .row>div:before {
+  background: rgba(172, 195, 218, 0.616);
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.wrapper .row:hover>div {
+  flex-basis: calc(100% * 1/6);
+  flex-basis: 16.66%;
+  max-width: calc(100% * 1/6);
+  max-width: 16.66%;
+}
+
+.wrapper .row .item-wrapper {
+  flex-basis: calc(100% * 1/3);
+  flex-basis: 33.33%;
+  max-width: calc(100% * 1/3);
+  max-width: 33.33%;
+}
+
+.wrapper .row .item-wrapper>div {
+  height: 100%;
+  position: relative;
+}
+
+.wrapper .row .item-wrapper>a>div {
+  position: relative;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.wrapper .row .item-wrapper .description p {
+  width: calc(100% * 2/3);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 0;
+  opacity: 0;
+}
+
+.wrapper .row .item-wrapper .category-icon {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  font-size: 0.79rem;
+  color: #0DAFE0;
+  display: flex;
+  align-items: center;
+  padding: .35rem;
+  opacity: .7;
+  filter: grayscale(50%);
+}
+
+
+.wrapper .row .item-wrapper .category-icon:after {
+  content: '';
+  display: block;
+  margin-left: .5rem;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(https://mdbootstrap.com/img/Marketing/general/logo/small/mdb.png);
+  mask-image: url(https://mdbootstrap.com/img/Marketing/general/logo/small/mdb.png);
+  background-color: #0DAFE0;
+  height: 20px;
+  width: 21px;
+} 
+
+.wrapper .row .item-wrapper:hover {
+  flex-basis: calc(100% * 2/3);
+  flex-basis: 66.66%;
+  max-width: calc(100% * 2/3);
+  max-width: 66.66%;
+}
+
+.wrapper .row .item-wrapper:hover .title {
+  font-size: 1.953rem;
+  color: #212529;
+  text-shadow: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.wrapper .row .item-wrapper:hover .subtitle {
+  opacity: 1;
+  color: #495057;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.wrapper .row .item-wrapper:hover .category-icon {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.wrapper .row .item-wrapper:hover .description p {
+  opacity: 1;
+  color: #212529;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.wrapper .row .item-wrapper:hover:before {
+  background: rgba(248, 249, 250, 0.8) !important;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container .row h4:first-of-type {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.wrapper .row:first-child> :nth-child(1) {
+  background-color: #515272;
+  background-image: url("/img/2016/harley-davidson-3-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrapper .row:first-child> :nth-child(2) {
+  background-color: #6c3f31;
+  background-image: url("/img/2016/beach-cottage-1-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrapper .row:first-child> :nth-child(3) {
+  background-color: #323119;
+  background-image: url("/img/2016/block-the-sun-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrapper .row:last-child> :nth-child(1) {
+  background-color: #5d92cb;
+  background-image: url("/img/2016/cabin-patio-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrapper .row:last-child> :nth-child(2) {
+  background: #e9ecef;
+  background-image: url("/img/2016/bug-protection-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.wrapper .row:last-child> :nth-child(3) {
+  background-color: #112a3b;
+  background-image: url("/img/2015/perks-gem-set-salmon-arm-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
 
 
 
+.anchorWhite {
+  color: #212529;
+  text-decoration: none;
+}
+
+.anchorWhite:hover {
+  color: #ffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.mainColor {
+  color: #bd9b04;
+}
+
+
+.carousel-item img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+#carousel-example-1z {
+  background-color: #000000;
+}
+
+
+Translation 
+
+.skiptranslate {
+  padding: 10px;
+}
 
